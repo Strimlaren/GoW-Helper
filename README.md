@@ -1,6 +1,6 @@
 ## GoW-Helper
 
-#### What is it?
+### What is it?
 Automated stat data collector with GUI for Gems of War. Lets you manually or automatically keep track of 
 token rewards while farming **Explore 12** in Gems of War. 
 
@@ -13,6 +13,10 @@ token rewards while farming **Explore 12** in Gems of War.
 - If you still want to manually make sure the app finds and enters the correct drops before it submits them, you can omit the "Auto-submit results" checkbox.
 - Auto detection log that tells you what it is currently doing as well as last run duration and drop findings.
 
+### Requirements
+For the auto-detection to work, Tesseract OCR has to be installed on the system, and located in  
+'C:\Program Files\Tesseract-OCR\tesseract.exe' as per line 19 in main.py. At least until a stand-alone version of the app is released.
+
 ### Known bugs:
 1. Since the introduction of the Wandering Merchants, the auto-detection will falsely report chosen rewards as drops. This is due to the reward screen having the same layout and positioning on the game screen.
 2. Some in-game GUI changes have made it harder for the auto-detection. It will currently only report no-mythstone runs.
@@ -23,7 +27,7 @@ token rewards while farming **Explore 12** in Gems of War.
 
 ![Auto-Detection](https://i.gyazo.com/24b707142efcfdb454ca1d8bcc7b22c0.png)
 
-#### Technologies learnt thought this project:
+### Technologies learnt thought this project:
 - Tkinter GUI library (ttk Bootstrap)
 - Tesseract library for reading text from the screen and using it in code.
 - Multi-Threading to be able to constantly read the screen for events in the game and for GUI not to freeze.
